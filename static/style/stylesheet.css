@@ -1,0 +1,1558 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+    display: table;
+    width: 100%;
+}
+
+
+/* =======Header======= */
+
+#wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 58px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation-bar-logo {
+    width: auto;
+    height: 50%;
+    user-select: none;
+    padding-left: 15px;
+}
+
+#navigation-bar-right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 22px;
+    width: fit-content;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    width: 210px;
+    height: 45%;
+    border-radius: 10vmax;
+    padding-left: 10px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 15%);
+    justify-content: flex-start;
+}
+
+#search-bar-input {
+    border: none;
+    outline: none;
+    width: 177px;
+    height: auto;
+    color: #9c9c9c;
+}
+
+#search-bar-search-icon {
+    margin-left: 5px;
+    padding-top: 2px;
+    align-items: center;
+    width: 23px;
+}
+
+#login-button {
+    width: 65px;
+    height: 45%;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 10vmax;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 15%);
+    font-size: 13px;
+    color: #9c9c9c;
+}
+
+
+#login-button > a:link, #login-button > a:visited{
+    color: #9c9c9c;
+    text-decoration: none;
+}
+
+
+
+#banner {
+    background-image: url(../images/Banner.png);
+    background-position-x: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+
+}
+
+#banner-logo {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    user-select: none;
+}
+
+#motivation-text {
+    margin-top: 17px;
+    text-align: center;
+    color: #F1F1F1;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    font-size: 15px;
+}
+
+#choose-trip-box {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#departure-country-input, #arrival-country-input {
+    line-height: 40px;
+    color: #D7D7D7;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.vl { /* Vertical line */ 
+    position: absolute;
+    border-left: 1px solid #D7D7D7;
+    height: 40px;
+}
+
+#departure-country-input {
+    padding-left:10px;
+}
+
+#trip-search-button {
+    background-color: #49EA5B;
+    color: #FEFEFE;
+    border: none;
+    display: block;
+    margin: 22px auto;
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    font-weight: 10;
+    cursor: pointer;
+}
+
+#select-departure-countries, #select-arrival-countries {
+    position: relative;
+    background-color: #FEFEFE;
+    margin: 0 auto;
+    border-top: 1px solid #D7D7D7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: left;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+    display: none;
+    line-height: 25px;
+}
+#select-departure-countries, #select-arrival-countries {
+    width: 96%;
+}
+
+.select-country {
+    font-size: 13px;
+    padding-left: 2%;
+ }
+
+
+/* ========Article======= */
+article {
+    background: #FEFEFE;
+    border-radius: 10px;
+    width: 87vmax;
+    max-width: 1200px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    margin: 1%;
+}
+
+#article-header {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, rgb(187, 203, 210, 0.50) , #F8F8F8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#article-name {
+    color: #ffffff;
+    text-shadow: 0px 1px 5px rgba(169, 169, 169, 0.6);
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#article-content {
+    color: #9A9A9A;
+    padding: 2%;
+    font-size: 15px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    z-index: 8;
+    margin-top: 5%;
+}
+
+#bottom-navigation {
+    height: 100px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    background-color: rgb(243, 243, 243);
+}
+
+#bottom-left {
+    display: flex;
+    justify-content: center;
+    margin: 15px 3% 0% 2%;
+}
+
+#bottom-navigation-text-position {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-navigation-text {
+    margin-right: 20px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+#footer-search-bar {
+    display: flex;
+    margin-left: 250px;
+    width: 220px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.bottom-navigation-input-search-bar {
+    width: 220px;
+    height: 25px;
+    outline: none;
+    border: none;
+}
+
+.bottom-navigation-input-button {
+    width: 30px;
+    align-items: stretch;
+    outline: none;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+#footer-seperate {
+    display: flex;
+    margin-top: 9px;
+    width: 1000px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#copyright-text {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    color: rgb(200, 200, 200);
+    margin-top: 10px;
+}
+
+.Card {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 100%;
+    box-shadow: 0 0 18px 1px #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.CardHeader {
+    display: flex;
+    position: relative;
+    height: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    box-shadow: 0 0 10px 2px #80808063;
+    z-index: 3;
+}
+
+.CardDestination {
+    display: flex;
+    width: 50%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    align-items: center;
+    padding-left: 10px;
+    color: #7D7D7D;
+}
+
+.CardCost {
+    display: flex;
+    width: 50%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    align-items: center;
+    padding-right: 10px;
+    color: #7D7D7D;
+    justify-content: flex-end;
+}
+
+.CardLeftField {
+    display: flex;
+    width: 50%;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CardDescription {
+    position: static;
+    font-family: Roboto;
+    font-size: 15px;
+    padding: 6px 10px;
+    color: #7D7D7D;
+    height: -webkit-fill-available;
+}
+
+.CardParameters {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.CardParametersFlightDate {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #7D7D7D;
+}
+
+.CardParametersFlightTime {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #7D7D7D;
+}
+
+.CardInformationField {
+    display: flex;
+    height: -webkit-fill-available;
+}
+
+.CardDestinationImage {
+    object-fit: cover;
+    width: 50%;
+}
+
+.three-field-grid {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    gap: 10px 20px;
+    grid-template-areas:
+        "Header Header Header Header Header"
+        "Left Field1 Field2 Field3 Right"
+        "NavigationButtons NavigationButtons NavigationButtons NavigationButtons NavigationButtons";
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.three-field-grid-comment {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    gap: 10px 20px;
+    grid-template-areas:
+        "Header Header Header Header Header"
+        "Left Field1 Field2 Field3 Right"
+        "NavigationButtons NavigationButtons NavigationButtons NavigationButtons NavigationButtons";
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.Header {
+    grid-area: Header;
+    font-family: Roboto;
+    font-size: 28px;
+    padding-left: 40px;
+    padding-top: 15px;
+    color: #7D7D7D;
+}
+
+.three-field-grid-comment .Field1 {
+    grid-area: Field1;
+    width: 320px;
+    height: fit-content;
+    user-select: text;
+}
+
+.three-field-grid-comment .Field2 {
+    grid-area: Field2;
+    width: 320px;
+    height: fit-content;
+    user-select: text;
+}
+
+.three-field-grid-comment .Field3 {
+    grid-area: Field3;
+    width: 320px;
+    height: fit-content;
+    user-select: text;
+}
+
+.three-field-grid .Field1 {
+    grid-area: Field1;
+    width: 350px;
+    height: fit-content;
+    user-select: text;
+}
+
+.three-field-grid .Field2 {
+    grid-area: Field2;
+    width: 350px;
+    height: fit-content;
+    user-select: text;
+}
+
+.three-field-grid .Field3 {
+    grid-area: Field3;
+    width: 350px;
+    height: fit-content;
+    user-select: text;
+}
+
+.Right {
+    grid-area: Right;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Left {
+    grid-area: Left;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.NavigationButtons {
+    grid-area: NavigationButtons;
+    display: flex;
+    height: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3px;
+}
+
+.NavDirectionButton {
+    stroke: #dcdcdc;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.MoveRightButton {
+    fill: grey;
+}
+
+.MoveLeftButton {
+    fill: grey;
+}
+
+.NavButtonOff {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 7px 2px #9c9c9c5c;
+    border-radius: 7vmax;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.NavButtonOn {
+    width: 10px;
+    height: 10px;
+    background-color: #b6b6b6bf;
+    box-shadow: 0px 0px 7px 2px #5c5c5c5c;
+    border-radius: 7vmax;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.NewsLayoutGrid {
+    display: grid;
+    grid-template-columns: min-content 180px min-content;
+    grid-template-rows: min-content min-content;
+    gap: 25px 15px;
+    grid-template-areas:
+        "Description1 Description1 Photo1"
+        "Photo2 Description2 Description2";
+    margin: 0px auto;
+    justify-content: center;
+    padding-top: 40px;
+}
+.Description1 { grid-area: Description1; }
+.Description2 { grid-area: Description2; }
+.Photo1 { grid-area: Photo1; }
+.Photo2 { grid-area: Photo2; }
+
+.Photo1 img {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px 0px #80808096;
+}
+
+.Photo2 img {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px 0px #80808096;
+}
+
+.NewsHeader {
+    font-size: 25px;
+    color: #7D7D7D;
+    padding-bottom: 10px;
+}
+
+.NewsDescription {
+    font-size: 18.7px;
+    color: #9e9e9e;
+}
+
+.LargeInformationBubble {
+    display: flex;
+    width: 800px;
+    height: 250px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding-top: 57px;
+}
+
+.MainSquare {
+    display: flex;
+    height: -webkit-fill-available;
+    background-color: #f1f4f6;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 17px;
+    box-shadow: 0 0 11px 0 rgb(0 0 0 / 17%);
+}
+
+.backgroundCircle {
+    display: flex;
+    background-color: #ECF0F3;
+    width: 110px;
+    height: 110px;
+    border-radius: 10vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+.BubbleInfoField {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.AirplaneSVG {
+    height: 73px;
+}
+
+.BookSVG {
+    height: 60px;
+}
+
+.CashSVG {
+    height: 40px;
+}
+
+.BellSVG {
+    height: 63px;
+}
+
+.BottomTriangleSVG {filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.17));}
+
+.TextField {width: 175px;text-align: center;color: #c0c0c0;padding-top: 12px;}
+
+footer {
+    bottom: 0px;
+}
+
+  
+/* About us */
+
+#about-us-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* About us article */
+#about-us-article {
+    flex: 50%;
+}
+
+/* History article */
+#history-article {
+    flex: 40%;
+}
+/* We offer article */
+#we-offer-article {
+    flex: 100%;
+    max-width: none;
+}
+
+.travel-info-container{
+    justify-content: center;
+    background: #FEFEFE;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 42.5%;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#destination-info-and-time{
+    display: flex;
+    justify-content: center;
+    margin: 1% auto;
+    flex-wrap: nowrap;
+}
+
+#city-info{
+    flex: 50%;
+    padding: 2%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#city-name{
+    display: flex;
+    font-size: 32px;
+}
+
+#travel-info-price{
+    display: block;
+    background: #ade861;
+    border-radius: 10px;
+    max-width: 50px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    padding: 7px;
+    margin: -32px 0 0 90%;
+}
+
+#travel-info-price-text{
+    color: #ffffff;
+}
+
+#city-description{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 82%;
+}
+
+#city-hashtag{
+    display: flex;
+    flex-shrink: initial;
+    font-size: 14px;
+    margin-top: 40px;
+    color: #6BB5DF;
+}
+
+#travel-info-buy-option{
+    display: block;
+    background: #f9f9f9;
+    border-radius: 10px;
+    max-width: 140px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    padding: 7px;
+    margin: -32px 0 0 83%;
+}
+
+#travel-info-buy-option-text{
+    display: flex;
+    justify-content: center;
+    color: #c7c7c7;
+}
+
+#destination-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: #FEFEFE;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 23%;
+    height: 80%;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    margin-right: 1%;
+}
+
+#destination{
+    padding: 2%;
+}
+
+#destination-text{
+    font-size: 14px;
+}
+
+#date-info-container{
+    display: flex;
+    background: #FEFEFE;
+    border-radius: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    width: 17.5%;
+    height: 350px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+}
+
+#date-info{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 14px;
+    width: 260px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#date-info-left {
+    color: #afafaf;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+#date-info-right{
+    color: #afafaf;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.vl-travel-info{
+    position: absolute;
+    line-height: 20px;
+    border-left: 1px solid #D7D7D7;
+}
+
+
+/* Global for forms */
+#form-banner-background{
+    background-image: url(../images/Banner_for_forms.png);
+    background-position-x: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* login-form */
+
+#login{
+    width: 350px;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+form > input, form > select{
+    margin: 0% 10%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #9A9A9A;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding-left: 3%;
+}
+
+form:first-child input{
+    margin-top: 10%;
+}
+
+form > a, form > p{
+    text-align: center;
+}
+
+#remember-password-checkbox{
+    margin: 0% 10%;
+}
+
+
+.submit-button{
+    margin: 5% auto ;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #8f8f8f;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+.submit-button:hover, #remove-person > img:hover, #add-person > img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Register */
+#top-of-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    grid-column-gap: 10px;
+}
+#top-of-form > #name, #top-of-form > #lastname{
+    width: 100%;
+}
+
+#top-of-form > input{
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #9A9A9A;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding-left: 3%;
+}
+
+
+#form:first-child input{
+    margin-top: 5%;
+}
+
+
+.submit-button{
+    margin: 5% auto;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #8f8f8f;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.Card {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 100%;
+    box-shadow: 0 0 18px 1px #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.CardHeader {
+    display: flex;
+    position: relative;
+    height: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    box-shadow: 0 0 10px 2px #80808063;
+    z-index: 3;
+}
+
+.CardDestination {
+    display: flex;
+    width: 50%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    align-items: center;
+    padding-left: 10px;
+    color: #7D7D7D;
+}
+
+.CardCost {
+    display: flex;
+    width: 50%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    align-items: center;
+    padding-right: 10px;
+    color: #7D7D7D;
+    justify-content: flex-end;
+}
+
+.CardLeftField {
+    display: flex;
+    width: 50%;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.NewestCardDescription {
+    position: static;
+    font-family: Roboto;
+    font-size: 15px;
+    padding: 6px 10px;
+    color: #7D7D7D;
+    height: -webkit-fill-available;
+}
+
+.CardDescription {
+    position: static;
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 6px 10px;
+    color: #7D7D7D;
+    height: -webkit-fill-available;
+}
+
+.CardParameters {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.CardParametersFlightDate {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #7D7D7D;
+}
+
+.CardParametersFlightTime {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #7D7D7D;
+}
+
+.CardInformationField {
+    display: flex;
+    height: -webkit-fill-available;
+}
+
+.CardDestinationImage {
+    object-fit: cover;
+    width: 50%;
+}
+
+.NewestDestinationsGrid {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    gap: 10px 20px;
+    grid-template-areas:
+        "Header Header Header Header Header"
+        "Left Field1 Field2 Field3 Right"
+        "NavigationButtons NavigationButtons NavigationButtons NavigationButtons NavigationButtons";
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.Header {
+    grid-area: Header;
+    font-family: Roboto;
+    font-size: 28px;
+    padding-left: 40px;
+    padding-top: 15px;
+    color: #7D7D7D;
+}
+
+.Field1 {
+    grid-area: Field1;
+    width: 350px;
+    height: 218px;
+}
+
+.Field2 {
+    grid-area: Field2;
+    width: 350px;
+    height: 218px;
+}
+
+.Field3 {
+    grid-area: Field3;
+    width: 350px;
+    height: 218px;
+}
+
+.Right {
+    grid-area: Right;
+    align-self: center;
+}
+
+.Left {
+    grid-area: Left;
+    align-self: center;
+}
+
+.NavigationButtons {
+    grid-area: NavigationButtons;
+    display: flex;
+    height: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3px;
+}
+
+.NavDirectionButton {
+    stroke: #dcdcdc;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.MoveRightButton {
+    fill: grey;
+}
+
+.MoveLeftButton {
+    fill: grey;
+}
+
+.NavButtonOff {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 7px 2px #9c9c9c5c;
+    border-radius: 7vmax;
+    margin: 5px;
+}
+
+.NavButtonOn {
+    width: 10px;
+    height: 10px;
+    background-color: #b6b6b6bf;
+    box-shadow: 0px 0px 7px 2px #5c5c5c5c;
+    border-radius: 7vmax;
+    margin: 5px;
+}
+
+.NewsLayoutGrid {
+    display: grid;
+    grid-template-columns: min-content 180px min-content;
+    grid-template-rows: min-content min-content;
+    gap: 25px 15px;
+    grid-template-areas:
+        "Description1 Description1 Photo1"
+        "Photo2 Description2 Description2";
+    margin: 0px auto;
+    justify-content: center;
+    padding-top: 40px;
+}
+.Description1 { grid-area: Description1; }
+.Description2 { grid-area: Description2; }
+.Photo1 { grid-area: Photo1; }
+.Photo2 { grid-area: Photo2; }
+
+.Photo1 img {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px 0px #80808096;
+}
+
+.Photo2 img {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px 0px #80808096;
+}
+
+.NewsHeader {
+    font-size: 25px;
+    color: #7D7D7D;
+    padding-bottom: 10px;
+}
+
+.NewsDescription {
+    font-size: 18.7px;
+    color: #9e9e9e;
+}
+
+#offer-Quote{
+    color: #c9c9c9;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125);
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-top: 1%;
+}
+
+#offers-row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#offers-row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#offers-row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.standart-offer{
+    margin: 1% 2% 0 0;
+    width: 325px;
+    height: 197px;
+}
+
+
+.standart-offer-right-side{
+    margin: 1% 0 0 0;
+    width: 325px;
+    height: 197px;
+}
+
+.standart-offer-last-row{
+    margin-bottom: 7%;
+}
+
+.submit-button> a:link, .submit-button > a:visited{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+
+/* status bar */
+#status-bar {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 58px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+}
+
+#status-position{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+#active-section{
+    text-decoration: underline;
+    color: #8a8a8a;
+    padding: 0 10px;
+}
+
+#closed-section{
+    color: #b1b1b1;
+    padding: 0 10px;
+}
+
+/* ticket reservation passanger info */
+#form-for-birthday-date{
+    display: grid;
+    max-width: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-gap: 10px;
+    vertical-align: middle;
+}
+
+#form-for-birthday-date > input{
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #9A9A9A;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding-left: 3%;
+    user-select: none;
+}
+
+#date-text{
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+}
+
+/* remove person */
+#remove-person{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    padding-top: 2%;
+    border-top: 1px solid rgb(184, 184, 184);
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+#remove-person > img{
+    margin-right: 5%;
+}
+
+#continue-button{
+    margin: -2% auto;
+    text-align: center;
+}
+
+#add-person{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    color: #9A9A9A;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    margin: 5% auto 0%;
+}
+
+#add-person > img{
+    margin-right: 5%;
+}
+
+#pop-up-passangers-info-data-accept{
+    display: none;
+    position: fixed;
+    background-color:  rgba(168, 168, 168, 0.52);
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: 1;
+}
+
+#pop-up-form{
+    background-color: #e9e9e9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#pop-up-form > #continue-button{
+    margin-top: 5%;
+}
+
+/* Flight costumization */
+#dropdown-box{
+    color: #D7D7D7;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+#dropdown-box-value{
+    background-color: #FEFEFE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #9A9A9A;
+    outline: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 3%;
+}
+
+#dropdown-box-select{
+    display: none;
+    line-height: 30px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    position: absolute;
+    width: 270px;
+    color: #9A9A9A;
+}
+
+#booking-info-container, #sum-of-all-conatiner{
+    margin: 5% 10%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #9A9A9A;
+    outline: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 3%;
+    font-size: 12px;
+}
+
+#sum-of-all-conatiner{
+    margin: 5% 35%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+
+#book-button-container{
+    width: 100%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+
+#book-button{
+    margin: 5% auto;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.125); /* Nevar pārkonvertēt uz HEX*/ 
+    border-radius: 5px;
+    color: #8f8f8f;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+#book-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#departure-country, #arrive-country, #people-count, #departure-date, #arrive-date, #fly-number, #sum-of-all{
+    font-size: 13px;
+    color: #777777;;
+}
+
+.comment-frame {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px 0px #8080805e;
+}
+
+img.profile-image {
+    width: 50px;
+    height: 50px;
+}
+
+img.profile-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 10vmax;
+    margin-left: 2px;
+}
+
+.comment-part {
+    width: 212px;
+    padding-top: 4px;
+}
+
+.commenter-name {
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+.commenter-comment {
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+#person-name{
+    font-size: 20px;
+    color: #9A9A9A;
+}
+
+#reigon{
+    font-size: 13px;
+}
+
+#position{
+    font-size: 13px;
+}
+
+/* Profile */
+#profile-sidebar, #ticket-purchase-history, #reserved-tickets{
+    width:100%;
+    margin: 0;
+}
+
+#profile-sidebar{
+    grid-row: 1 / 5;
+    display: table;
+}
+
+#ticket-purchase-history{
+    grid-column: 2 / 3;
+}
+
+#profile-grid{
+    display: grid;
+    grid-template-columns: 300px 800px;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 20px;
+    padding-top: 5%;
+}
+
+
+#profile-image{
+    width: 150px;
+    height: 175px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+}
+
+#profile-sidebar-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+    width: 200px;
+}
+
+#profile-sidebar-buttons > button{
+    margin: 3% auto;
+    width: 100%;
+}
+
+#profile-sidebar-buttons > #wallet{
+    font-size: 14px;
+    color: #9A9A9A;
+    text-align: left;
+}
+
+#username{
+    text-align: center;
+    margin: 4%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#user-role{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 18px;
+}
+
+.ticket-info{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    padding: 0.5%;
+    margin-top: 2%;
+    background-color: #eeeeee;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+#vl-info{
+    height: 30px;
+    border-left: 2px solid #9c9c9c;
+}
+
+.ticket-info:first-child{
+    margin: 0;
+}
